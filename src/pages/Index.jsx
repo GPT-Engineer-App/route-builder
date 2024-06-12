@@ -1,17 +1,15 @@
-// Update this page (the content is just a fallback if you fail and example)
-// Use chakra-ui
-import { Container, Text, VStack } from "@chakra-ui/react";
-
-// Example of using react-icons
-// import { FaRocket } from "react-icons/fa";
-// <IconButton aria-label="Add" icon={<FaRocket />} size="lg" />; // IconButton would also have to be imported from chakra
+import { Container, Heading, VStack, Box, Text } from "@chakra-ui/react";
 
 const Index = () => {
   return (
-    <Container centerContent maxW="container.md" height="100vh" display="flex" flexDirection="column" justifyContent="center" alignItems="center">
-      <VStack spacing={4}>
-        <Text fontSize="2xl">Your Blank Canvas</Text>
-        <Text>Chat with the agent to start making edits.</Text>
+    <Container maxW="container.lg" py={10}>
+      <VStack spacing={8}>
+        <Heading as="h1" size="2xl">Welcome to GeoRoutes</Heading>
+        <Text fontSize="lg">Explore routes created by other users or create your own geographical routes with pinpoints.</Text>
+        <Box w="100%" p={5} shadow="md" borderWidth="1px">
+          <Heading fontSize="xl">User Routes</Heading>
+          <Text mt={4}>No routes available. Start by creating a new route!</Text>
+        </Box>
       </VStack>
     </Container>
   );
